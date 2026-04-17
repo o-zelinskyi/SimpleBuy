@@ -1,0 +1,6 @@
+@PortfolioAspNet_HostAddress = http://localhost:5110
+
+GET {{PortfolioAspNet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

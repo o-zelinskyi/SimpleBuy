@@ -1,0 +1,132 @@
+.orders-layout {
+  display: grid;
+  gap: 0;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+.badge-admin {
+  color: #31463d;
+  background: rgba(221, 233, 225, 0.85);
+  border-color: rgba(52, 91, 70, 0.18);
+}
+
+.badge-seller {
+  color: #6f5630;
+  background: rgba(244, 232, 209, 0.9);
+  border-color: rgba(111, 86, 48, 0.18);
+}
+
+.badge-buyer {
+  color: #415a73;
+  background: rgba(220, 231, 240, 0.9);
+  border-color: rgba(65, 90, 115, 0.18);
+}
+
+.orders-table {
+  width: 100%;
+  min-width: 960px;
+}
+
+.project-title {
+  font-weight: 600;
+}
+
+.price-cell {
+  font-weight: 700;
+}
+
+.status-chip {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.status-pending {
+  background: rgba(244, 232, 209, 0.9);
+  color: #8b682d;
+  border-color: rgba(139, 104, 45, 0.15);
+}
+
+.status-confirmed {
+  background: var(--app-success-soft);
+  color: var(--app-success);
+  border-color: rgba(52, 91, 70, 0.14);
+}
+
+.status-cancelled {
+  background: var(--app-danger-soft);
+  color: var(--app-danger);
+  border-color: rgba(160, 72, 63, 0.12);
+}
+
+.status-select {
+  width: 140px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.table-toolbar {
+  justify-content: flex-end;
+}
+
+:host ::ng-deep .status-select .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+
+:host ::ng-deep .status-select .mat-mdc-text-field-wrapper {
+  background: var(--app-surface-muted) !important;
+  border-radius: 8px !important;
+}
+
+:host ::ng-deep .status-select .mat-mdc-form-field-flex {
+  min-height: 40px;
+  align-items: center;
+}
+
+:host ::ng-deep .status-select .mat-mdc-form-field-infix {
+  min-height: auto;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+:host ::ng-deep .status-select .mat-mdc-select-value-text,
+:host ::ng-deep .status-select .mat-mdc-select-arrow {
+  color: var(--app-text);
+}
+
+:host ::ng-deep .status-select .mdc-notched-outline__leading,
+:host ::ng-deep .status-select .mdc-notched-outline__notch,
+:host ::ng-deep .status-select .mdc-notched-outline__trailing {
+  border-color: var(--app-border-strong) !important;
+}
+
+:host ::ng-deep .status-select.mat-focused .mdc-notched-outline__leading,
+:host ::ng-deep .status-select.mat-focused .mdc-notched-outline__notch,
+:host ::ng-deep .status-select.mat-focused .mdc-notched-outline__trailing {
+  border-color: var(--app-accent) !important;
+}
+
+.empty-state {
+  border-top: 1px solid var(--app-border);
+}
+
+.empty-icon {
+  font-size: 3.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  color: var(--app-muted);
+  margin-bottom: 0.5rem;
+}

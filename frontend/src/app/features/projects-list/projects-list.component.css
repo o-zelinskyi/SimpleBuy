@@ -1,0 +1,59 @@
+.primary-action {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.projects-table {
+  width: 100%;
+  min-width: 760px;
+}
+
+.project-cell {
+  padding-block: 1rem;
+}
+
+.project-copy {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-description {
+  max-width: 30rem;
+  color: var(--app-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.price-cell {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.clickable-row {
+  cursor: pointer;
+}
+
+.actions-cell {
+  white-space: nowrap;
+}
+
+.projects-empty {
+  border-top: 1px solid var(--app-border);
+}
+
+@media (max-width: 640px) {
+  .primary-action {
+    width: 100%;
+    justify-content: center;
+  }
+}
